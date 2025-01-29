@@ -1,6 +1,6 @@
-# Agent Based Model of Numo
+# Agent Based Model
 
-Agent bsed model with evm parity using Arbiter.  
+Agent bsed model with evm parity using Arbiter for simulating liquidity providing strategies and rebalancing behavior.  
 
 This repository has an example behavior [`Incrementer`](src/behaviors/incrementer.rs). The current design philosophy is that the user should only ever have to build agent behaviors implementing the [`Behavior`](https://github.com/primitivefinance/arbiter/blob/fe6b556d715d641aa9378ae20560629ec6ba5b43/arbiter-engine/src/machine.rs#L73) trait. In this example, the `Incrementer` behavior is configured with a [config file](https://github.com/primitivefinance/arbiter-template/blob/main/configs/example.toml). Configuring behaviors with a config file is a design choice we made to enable versatile parameterization at runtime as opposed to compile time.
 
